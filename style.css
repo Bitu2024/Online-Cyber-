@@ -9,93 +9,121 @@ body{
 background:#f2f2f2;
 }
 
-header{
+.header{
 background:#0d6efd;
-color:white;
-padding:20px;
+color:#fff;
 text-align:center;
+padding:20px;
 }
 
-nav{
-background:red;
+.header h1{
+font-size:38px;
 }
 
-nav ul{
+.header p{
+margin-top:8px;
+font-size:18px;
+}
+
+.navbar{
+background:#d50000;
+}
+
+.navbar ul{
 display:flex;
 justify-content:center;
+flex-wrap:wrap;
 list-style:none;
 }
 
-nav ul li{
-padding:15px;
+.navbar ul li{
+border-right:1px solid #fff;
 }
 
-nav ul li a{
-color:white;
+.navbar ul li:last-child{
+border:none;
+}
+
+.navbar ul li a{
+display:block;
+padding:15px 20px;
 text-decoration:none;
+color:#fff;
 font-weight:bold;
 }
 
-.search{
-text-align:center;
+.navbar ul li a:hover{
+background:#0d6efd;
+}
+
+.search-box{
+display:flex;
+justify-content:center;
 margin:20px;
 }
 
-.search input{
-padding:10px;
-width:300px;
+.search-box input{
+width:420px;
+padding:12px;
+border:1px solid #ccc;
+border-radius:5px 0 0 5px;
+outline:none;
 }
 
-.search button{
-padding:10px 20px;
-background:#0d6efd;
-color:white;
+.search-box button{
+padding:12px 18px;
 border:none;
+background:#0d6efd;
+color:#fff;
+cursor:pointer;
+border-radius:0 5px 5px 0;
 }
 
-.buttons{
+.social{
 display:flex;
 justify-content:center;
 gap:15px;
+flex-wrap:wrap;
 margin-bottom:20px;
 }
 
-.buttons button{
+.social a{
 padding:12px 20px;
-border:none;
-color:white;
-font-size:16px;
-cursor:pointer;
+text-decoration:none;
+color:#fff;
+font-weight:bold;
+border-radius:5px;
 }
 
 .youtube{
-background:red;
+background:#ff0000;
 }
 
 .whatsapp{
-background:green;
+background:#25d366;
 }
 
 .telegram{
 background:#0088cc;
 }
 
-.grid{
+.top-grid{
 display:grid;
 grid-template-columns:repeat(4,1fr);
 gap:10px;
-padding:20px;
+padding:15px;
 }
 
 .box{
 background:#0d6efd;
-color:white;
-padding:20px;
+color:#fff;
 text-align:center;
+padding:18px;
 font-weight:bold;
+border-radius:5px;
 }
 
-.cards{
+.container{
 display:grid;
 grid-template-columns:repeat(3,1fr);
 gap:20px;
@@ -103,40 +131,80 @@ padding:20px;
 }
 
 .card{
-background:white;
+background:#fff;
 border:2px solid #0d6efd;
 }
 
 .card h2{
 background:#0d6efd;
-color:white;
-padding:10px;
+color:#fff;
 text-align:center;
+padding:10px;
 }
 
 .card ul{
+list-style:none;
 padding:15px;
 }
 
-.card li{
-margin:10px 0;
+.card ul li{
+padding:10px 0;
+border-bottom:1px solid #ddd;
+font-size:15px;
+}
+
+.card ul li:last-child{
+border:none;
 }
 
 footer{
 background:#0d6efd;
-color:white;
+color:#fff;
 text-align:center;
 padding:15px;
 margin-top:20px;
 }
 
-@media(max-width:768px){
-.grid,
-.cards{
+@media(max-width:992px){
+
+.container{
 grid-template-columns:1fr;
 }
 
-nav ul{
+.top-grid{
+grid-template-columns:1fr 1fr;
+}
+
+}
+
+@media(max-width:600px){
+
+.navbar ul{
 flex-direction:column;
 }
+
+.search-box{
+flex-direction:column;
+align-items:center;
+}
+
+.search-box input{
+width:95%;
+border-radius:5px;
+margin-bottom:10px;
+}
+
+.search-box button{
+width:95%;
+border-radius:5px;
+}
+
+.top-grid{
+grid-template-columns:1fr;
+}
+
+.header h1{
+font-size:28px;
+}
+
 }
