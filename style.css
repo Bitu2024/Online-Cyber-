@@ -177,6 +177,11 @@ grid-template-columns:1fr 1fr;
 
 }
 
+.logo{
+    width: 150px !important;
+    height: auto !important;
+}
+
 @media(max-width:600px){
 
 .navbar ul{
