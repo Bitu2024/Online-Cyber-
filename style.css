@@ -203,9 +203,10 @@ border-radius:5px;
 grid-template-columns:1fr;
 }
 
-.Banner {
-    width: 120px;
+.Banner{
+    width: 200px;
     height: auto;
+    display: block;
 }
 
 .header h1{
