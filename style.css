@@ -177,10 +177,6 @@ grid-template-columns:1fr 1fr;
 
 }
 
-.logo{
-    width: 150px !important;
-    height: auto !important;
-}
 
 @media(max-width:600px){
 
@@ -208,16 +204,13 @@ border-radius:5px;
 grid-template-columns:1fr;
 }
 
-.logo{
-    width: 300px;
-    height: auto;
-    display: block;
-    margin: 20px auto;
-    border-radius: 10px;
-}
 
 .header h1{
 font-size:28px;
 }
 
+}
+.logo{
+    width: 150px !important;
+    height: auto !important;
 }
