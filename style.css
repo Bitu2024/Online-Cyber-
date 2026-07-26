@@ -203,10 +203,11 @@ border-radius:5px;
 grid-template-columns:1fr;
 }
 
-.Photo{
-    width: 10px;
+.logo {
+    width: 150px;
     height: auto;
     display: block;
+    margin: 20px auto;
 }
 
 .header h1{
