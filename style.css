@@ -203,6 +203,16 @@ border-radius:5px;
 grid-template-columns:1fr;
 }
 
+.logo{
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+
+
 .logo {
     width: 40px;
     height: auto;
