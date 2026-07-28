@@ -88,5 +88,29 @@ header{
     </ul>
 </div>
 
+<script>
+let searchInput = document.getElementById("searchInput");
+
+searchInput.addEventListener("keyup", function () {
+
+    let filter = this.value.toLowerCase();
+
+    let li = document.querySelectorAll("#jobList li");
+
+    li.forEach(function(item) {
+
+        let text = item.innerText.toLowerCase();
+
+        if (text.indexOf(filter) > -1) {
+            item.style.display = "";
+        } else {
+            item.style.display = "none";
+        }
+
+    });
+
+});
+</script>
+
 </body>
 </html>
