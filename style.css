@@ -211,6 +211,7 @@ font-size:28px;
 
 }
 .photo{
-    width: 1220px;
-    height: 1000px;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
 }
