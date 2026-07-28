@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest Jobs</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f2f2f2;
+    margin:0;
+}
+
+header{
+    background:#45a4ff;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+.search-box{
+    text-align:center;
+    margin:20px;
+}
+
+.search-box input{
+    width:90%;
+    max-width:500px;
+    padding:12px;
+    font-size:16px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.job-list{
+    width:90%;
+    max-width:700px;
+    margin:auto;
+    background:white;
+    border-radius:8px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    padding:10px;
+}
+
+.job-list ul{
+    list-style:none;
+    padding:0;
+}
+
+.job-list li{
+    padding:12px;
+    border-bottom:1px solid #ddd;
+}
+
+.job-list li a{
+    text-decoration:none;
+    color:#333;
+    font-weight:bold;
+}
+
+.job-list li:hover{
+    background:#eef7ff;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>📌 Latest Jobs</h1>
+</header>
+
+<div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search Latest Jobs...">
+</div>
+
+<div class="job-list">
+    <ul id="jobList">
+        <li><a href="#">RRB JE Recruitment 2026</a></li>
+        <li><a href="#">Railway Group D 2026</a></li>
+        <li><a href="#">Bihar Police Vacancy</a></li>
+        <li><a href="#">SSC GD Recruitment</a></li>
+        <li><a href="#">Indian Army Rally</a></li>
+        <li><a href="#">NFR Apprentice</a></li>
+        <li><a href="#">Bank PO Vacancy</a></li>
+    </ul>
+</div>
+
+<script>
+let searchInput = document.getElementById("searchInput");
+
+searchInput.addEventListener("keyup", function () {
+
+    let filter = this.value.toLowerCase();
+
+    let li = document.querySelectorAll("#jobList li");
+
+    li.forEach(function(item) {
+
+        let text = item.innerText.toLowerCase();
+
+        if (text.indexOf(filter) > -1) {
+            item.style.display = "";
+        } else {
+            item.style.display = "none";
+        }
+
+    });
+
+});
+</script>
+
+</body>
+</html>
