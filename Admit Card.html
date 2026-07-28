@@ -13,7 +13,7 @@ body{
 }
 
 header{
-    background:#45a4ff;
+    background:#45A4FF;
     color:white;
     text-align:center;
     padding:15px;
@@ -31,6 +31,11 @@ header{
     font-size:16px;
     border:1px solid #ccc;
     border-radius:5px;
+    outline:none;
+}
+
+.search-box input:focus{
+    border-color:#45A4FF;
 }
 
 .job-list{
@@ -46,6 +51,7 @@ header{
 .job-list ul{
     list-style:none;
     padding:0;
+    margin:0;
 }
 
 .job-list li{
@@ -53,14 +59,19 @@ header{
     border-bottom:1px solid #ddd;
 }
 
-.admitcard li a{
+.job-list li:last-child{
+    border-bottom:none;
+}
+
+.job-list li a{
     text-decoration:none;
     color:#333;
     font-weight:bold;
+    display:block;
 }
 
-.admitcard li:hover{
-    background:#eef7ff;
+.job-list li:hover{
+    background:#EEF7FF;
 }
 </style>
 
@@ -69,21 +80,20 @@ header{
 <body>
 
 <header>
-    <h1>📄Admit Card</h1>
+    <h1>📄 Admit Card</h1>
 </header>
 
 <div class="search-box">
     <input type="text" id="searchInput" placeholder="Search Admit Card...">
 </div>
 
-<div class="Admit-Card">
+<div class="job-list">
     <ul id="admitcard">
         <li><a href="#">BSEB Dummy Card</a></li>
         <li><a href="#">RRB Exam City</a></li>
         <li><a href="#">High Court Admit Card</a></li>
         <li><a href="#">Police SI Admit Card</a></li>
         <li><a href="#">Polytechnic Admit Card</a></li>
-      
     </ul>
 </div>
 
