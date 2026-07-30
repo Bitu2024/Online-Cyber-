@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Latest Jobs</title>
+    <title>University</title>
 
 <style>
 body{
@@ -33,7 +33,7 @@ header{
     border-radius:5px;
 }
 
-.job-list{
+.University{
     width:90%;
     max-width:700px;
     margin:auto;
@@ -43,23 +43,23 @@ header{
     padding:10px;
 }
 
-.job-list ul{
+.University ul{
     list-style:none;
     padding:0;
 }
 
-.job-list li{
+.University li{
     padding:12px;
     border-bottom:1px solid #ddd;
 }
 
-.job-list li a{
+.University li a{
     text-decoration:none;
     color:#333;
     font-weight:bold;
 }
 
-.job-list li:hover{
+.University li:hover{
     background:#eef7ff;
 }
 </style>
@@ -69,15 +69,15 @@ header{
 <body>
 
 <header>
-    <h1>📌 Latest Jobs</h1>
+    <h1>University</h1>
 </header>
 
 <div class="search-box">
-    <input type="text" id="searchInput" placeholder="Search Latest Jobs...">
+    <input type="text" id="searchInput" placeholder="Search Latest University...">
 </div>
 
-<div class="job-list">
-    <ul id="jobList">
+<div class="University">
+    <ul id="University">
         <li><a href="#">RRB JE Recruitment 2026</a></li>
         <li><a href="#">Railway Group D 2026</a></li>
         <li><a href="#">Bihar Police Vacancy</a></li>
@@ -95,7 +95,7 @@ searchInput.addEventListener("keyup", function () {
 
     let filter = this.value.toLowerCase();
 
-    let li = document.querySelectorAll("#jobList li");
+    let li = document.querySelectorAll("#University");
 
     li.forEach(function(item) {
 
