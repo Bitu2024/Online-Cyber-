@@ -218,33 +218,13 @@ font-size:28px;
 }
 
 .header{
-    background:#45A4FF;
-    padding:10px 20px;
+    width:100%;
 }
 
-.logo{
-    display:flex;
-    align-items:center;
-    gap:15px;
-}
-
-.logo img{
-    width:70px;
-    height:70px;
-    border-radius:50%;
-    object-fit:cover;
-}
-
-.logo-text h1{
-    margin:0;
-    color:#fff;
-    font-size:30px;
-}
-
-.logo-text p{
-    margin:5px 0 0;
-    color:#fff;
-    font-size:16px;
+.header img{
+    width:100%;
+    height:auto;
+    display:block;
 }
 
 /*.navbar{
