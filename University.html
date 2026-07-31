@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>University</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Results</title>
 
 <style>
 body{
-    font-family: Arial, sans-serif;
+    font-family:Arial,sans-serif;
     background:#f2f2f2;
     margin:0;
 }
@@ -22,7 +22,7 @@ body{
     display:block;
 }
 
-/* Navigation */
+/* Navbar */
 .navbar{
     background:#d50000;
 }
@@ -50,13 +50,14 @@ body{
     text-decoration:none;
     color:#fff;
     font-weight:bold;
-    transition:0.3s;
+    transition:.3s;
 }
 
 .navbar ul li a:hover{
     background:#0d6efd;
 }
 
+/* Search Box */
 .search-box{
     text-align:center;
     margin:20px;
@@ -71,35 +72,62 @@ body{
     border-radius:5px;
 }
 
-/*.University{
-    width:90%;
-    max-width:700px;
-    margin:auto;
-    background:white;
-    border-radius:8px;
-    box-shadow:0 0 10px rgba(0,0,0,0.2);
-    padding:10px;
+.search-box input:focus{
+    border-color:#45A4FF;
+    outline:none;
 }
 
-.University ul{
+/* Title */
+.title{
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+    background:red;
+    color:#fff;
+    text-align:center;
+    font-size:38px;
+    font-weight:bold;
+    padding:15px;
+    box-sizing:border-box;
+}
+
+/* Result List */
+.job-list{
+    width:90%;
+    max-width:1000px;
+    margin:0 auto 20px;
+    background:#fff;
+    border:1px solid #45A4FF;
+}
+
+.job-list ul{
     list-style:none;
+    margin:0;
     padding:0;
 }
 
-.University li{
-    padding:12px;
-    border-bottom:1px solid #ddd;
+.job-list li{
+    border-bottom:1px solid #45A4FF;
 }
 
-.University li a{
+.job-list li:last-child{
+    border-bottom:none;
+}
+
+.job-list li a{
+    display:block;
+    padding:18px;
     text-decoration:none;
-    color:#333;
+    color:#000;
+    font-size:22px;
     font-weight:bold;
+    line-height:1.5;
 }
 
-.University li:hover{
+.job-list li a:hover{
     background:#eef7ff;
-}*/
+    color:#1976d2;
+}
 </style>
 
 </head>
@@ -110,52 +138,51 @@ body{
     <img src="Header 1.png" alt="Online Cyber Header">
 </header>
 
-<!-- Navbar --> 
-
-<nav class="navbar">  
-    <ul>  
-<li><a href="index">🏠Home</a></li>  
-<li><a href="Latest -job">🚀Latest Jobs</a></li>  
-<li><a href="Admit Card">📄Admit Card</a></li>  
-<li><a href="Results">🏆Results</a></li>  
-<li><a href="University">🏫University</a></li>  
-<li><a href="Sarkari Yojana">🏛️Sarkari Yojana</a></li>  
-<li><a href="Scholarship">🧑‍🎓Scholarship</a></li>  
-    </ul>  
-</nav>  
+<nav class="navbar">
+<ul>
+<li><a href="index.html">🏠 Home</a></li>
+<li><a href="Latest-job.html">🚀 Latest Jobs</a></li>
+<li><a href="Admit Card.html">📄 Admit Card</a></li>
+<li><a href="Results.html">🏆 Results</a></li>
+<li><a href="University.html">🏫 University</a></li>
+<li><a href="Sarkari Yojana.html">🏛️ Sarkari Yojana</a></li>
+<li><a href="Scholarship.html">🧑‍🎓 Scholarship</a></li>
+</ul>
+</nav>
 
 <div class="search-box">
-    <input type="text" id="searchInput" placeholder="Search Latest University...">
+<input type="text" id="searchInput" placeholder="Search Latest Result...">
 </div>
 
-<div class="University">
-    <ul id="University">
-        <li><a href="#">RRB JE Recruitment 2026</a></li>
-        <li><a href="#">Railway Group D 2026</a></li>
-        <li><a href="#">Bihar Police Vacancy</a></li>
-        <li><a href="#">SSC GD Recruitment</a></li>
-        <li><a href="#">Indian Army Rally</a></li>
-        <li><a href="#">NFR Apprentice</a></li>
-        <li><a href="#">Bank PO Vacancy</a></li>
-    </ul>
+<div class="title">
+Results
+</div>
+
+<div class="job-list">
+<ul id="Result">
+<li><a href="#">RRB Group D Result</a></li>
+<li><a href="#">Polytechnic Result</a></li>
+<li><a href="#">DELED Result</a></li>
+<li><a href="#">B.Ed Merit List</a></li>
+<li><a href="#">University Result</a></li>
+</ul>
 </div>
 
 <script>
 let searchInput = document.getElementById("searchInput");
 
-searchInput.addEventListener("keyup", function () {
+searchInput.addEventListener("keyup", function(){
 
     let filter = this.value.toLowerCase();
+    let li = document.querySelectorAll("#Result li");
 
-    let li = document.querySelectorAll("#University");
-
-    li.forEach(function(item) {
+    li.forEach(function(item){
 
         let text = item.innerText.toLowerCase();
 
-        if (text.indexOf(filter) > -1) {
+        if(text.indexOf(filter) > -1){
             item.style.display = "";
-        } else {
+        }else{
             item.style.display = "none";
         }
 
