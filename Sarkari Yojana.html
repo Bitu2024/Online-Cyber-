@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Results</title>
+<title>Sarkari Yojana</title>
 
 <style>
 body{
@@ -151,15 +151,15 @@ body{
 </nav>
 
 <div class="search-box">
-<input type="text" id="searchInput" placeholder="Search Latest Result...">
+<input type="text" id="searchInput" placeholder="Search Latest Sarkari Yojana...">
 </div>
 
 <div class="title">
-Results
+Sarkari Yojana
 </div>
 
 <div class="job-list">
-<ul id="Result">
+<ul id="Sarkari-Yojana">
 <li><a href="#">RRB Group D Result</a></li>
 <li><a href="#">Polytechnic Result</a></li>
 <li><a href="#">DELED Result</a></li>
@@ -174,7 +174,7 @@ let searchInput = document.getElementById("searchInput");
 searchInput.addEventListener("keyup", function(){
 
     let filter = this.value.toLowerCase();
-    let li = document.querySelectorAll("#Result li");
+    let li = document.querySelectorAll("#Sarkari-Yojana li");
 
     li.forEach(function(item){
 
