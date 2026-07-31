@@ -22,6 +22,41 @@ body{
     display:block;
 }
 
+/* Navigation */
+.navbar{
+    background:#d50000;
+}
+
+.navbar ul{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.navbar ul li{
+    border-right:1px solid #fff;
+}
+
+.navbar ul li:last-child{
+    border-right:none;
+}
+
+.navbar ul li a{
+    display:block;
+    padding:15px 20px;
+    text-decoration:none;
+    color:#fff;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.navbar ul li a:hover{
+    background:#0d6efd;
+}
+
 .search-box{
     text-align:center;
     margin:20px;
@@ -74,6 +109,20 @@ body{
 <header class="header">
     <img src="Header 1.png" alt="Online Cyber Header">
 </header>
+
+<!-- Navbar --> 
+
+<nav class="navbar">  
+    <ul>  
+<li><a href="#">🏠Home</a></li>  
+<li><a href="Latest -job">🚀Latest Jobs</a></li>  
+<li><a href="Admit Card">📄Admit Card</a></li>  
+<li><a href="Results">🏆Results</a></li>  
+<li><a href="University">🏫University</a></li>  
+<li><a href="Sarkari Yojana">🏛️Sarkari Yojana</a></li>  
+<li><a href="Scholarship">🧑‍🎓Scholarship</a></li>  
+    </ul>  
+</nav>  
 
 <div class="search-box">
     <input type="text" id="searchInput" placeholder="Search Latest Sarkari Yojana...">
