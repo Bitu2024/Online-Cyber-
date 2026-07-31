@@ -84,8 +84,8 @@ cards.forEach(card=>{
 });
 
 // Footer Year
-const footer=document.querySelector("footer p");
+const footer = document.querySelector("footer p");
 
-const year=new Date().getFullYear();
+const year = new Date().getFullYear();
 
-footer.innerHTML=`© ${year} Online Update STM | All Rights Reserved`;
+footer.innerHTML = `© ${year} Online Cyber 2.0 | All Rights Reserved`;
