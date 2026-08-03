@@ -89,3 +89,27 @@ const footer = document.querySelector("footer p");
 const year = new Date().getFullYear();
 
 footer.innerHTML = `© ${year} Online Cyber 2.0 | All Rights Reserved`;
+
+// Auto Load Results
+fetch("results.json")
+  .then(response => response.json())
+  .then(data => {
+
+    const indexList = document.getElementById("results-list");
+    if (indexList) {
+      indexList.innerHTML = "";
+      data.forEach(item => {
+        indexList.innerHTML += `<li><a href="${item.link}">${item.title}</a></li>`;
+      });
+    }
+
+    const resultPage = document.getElementById("all-results");
+    if (resultPage) {
+      resultPage.innerHTML = "";
+      data.forEach(item => {
+        resultPage.innerHTML += `<li><a href="${item.link}">${item.title}</a></li>`;
+      });
+    }
+
+  })
+  .catch(error => console.log(error));
