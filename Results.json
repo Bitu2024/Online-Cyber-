@@ -1,27 +1,18 @@
-fetch("results.json")
-  .then(response => response.json())
-  .then(data => {
-
-    // index.html ka Results section
-    const indexList = document.getElementById("results-list");
-    if (indexList) {
-      indexList.innerHTML = "";
-      data.forEach(item => {
-        indexList.innerHTML += `
-          <li><a href="${item.link}" target="_blank">${item.title}</a></li>
-        `;
-      });
-    }
-
-    // Results.html ka Results section
-    const resultPage = document.getElementById("all-results");
-    if (resultPage) {
-      resultPage.innerHTML = "";
-      data.forEach(item => {
-        resultPage.innerHTML += `
-          <li><a href="${item.link}" target="_blank">${item.title}</a></li>
-        `;
-      });
-    }
-
-  });
+[
+  {
+    "title": "Bihar BEd 4th Merit List 2026",
+    "link": "#"
+  },
+  {
+    "title": "BSSC DST Bihar Karyalay Parichari Result 2026",
+    "link": "#"
+  },
+  {
+    "title": "SSC Stenographer Revised FRTA Result 2026",
+    "link": "#"
+  },
+  {
+    "title": "HP JBT Result 2026",
+    "link": "#"
+  }
+]
