@@ -1,5 +1,5 @@
 
-alert("Script Loaded");
+//alert("Script Loaded");
 // Search Function
 const searchInput = document.querySelector(".search-box input");
 const searchBtn = document.querySelector(".search-box button");
