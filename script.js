@@ -73,7 +73,7 @@ if (footer) {
 }
 
 // Auto Load Results
-fetch("results.json")
+fetch("Results.json")
     .then(response => response.json())
     .then(data => {
 
