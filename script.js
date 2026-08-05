@@ -94,7 +94,7 @@ fetch("./Results.json")
         }
 
         // Results.html
-        const resultPage = document.getElementById("all-results");
+        const resultPage = document.getElementById("all-result");
         if (resultPage) {
             resultPage.innerHTML = "";
 
