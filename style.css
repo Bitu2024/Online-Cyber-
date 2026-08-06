@@ -154,6 +154,10 @@ font-size:15px;
 border-bottom:none;
 }
 
+.card ul li a:hover{
+    text-decoration:none;
+}
+
 /* Photo */
 .photo{
 width:100%;
