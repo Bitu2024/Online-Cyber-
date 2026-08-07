@@ -148,7 +148,7 @@ padding:15px;
 padding:10px 0;
 border-bottom:1px solid #ddd;
 font-size:15px;
-font-weight:bold;
+
 }
 
 .card ul li:last-child{
@@ -157,6 +157,7 @@ border-bottom:none;
 
 .card ul li a:hover{
     text-decoration:none;
+    font-weight:bold;
 }
 
 /* Photo */
