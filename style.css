@@ -154,11 +154,17 @@ font-size:15px;
 .card ul li:last-child{
 border-bottom:none;
 }
+.card ul li a{
+    display: block;
+    font-weight: bold !important;
+    text-decoration: none;
+    color: #000;
+}
 
-.card ul li a:hover{
+/*.card ul li a:hover{
     text-decoration:none;
     font-weight:700 !important;
-}
+}*/
 
 /* Photo */
 .photo{
