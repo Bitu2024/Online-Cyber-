@@ -259,18 +259,11 @@ margin-top:20px;
     padding-top:12px;
     font-size:13px;
 }
-.line {
-    width: 100px;
-    height: 100px;
-    background: #45A4FF;
-    
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    color: white;
-    font-weight: bold;
+.footer-line {
+    width: 96%;
+    height: 145px;
+    background: #ff0000;
+    margin: 30px auto 0;
 }
 
 }
