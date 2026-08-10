@@ -218,9 +218,11 @@ margin-top:20px;
     grid-template-columns:1fr;  
 }  
 
-.header h1{  
-    font-size:28px;  
+header h1 {
+    font-size: 32px;
+    font-weight: bold;
 }
+
 
 .footer{
     background:#222;
