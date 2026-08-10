@@ -268,37 +268,4 @@ header h1 {
     margin: 30px auto 0;
 }
 
-.Personal{
-display:flex;
-justify-content:center;
-gap:15px;
-flex-wrap:wrap;
-margin-bottom:20px;
-}
-
-.Personal a{
-padding:12px 20px;
-text-decoration:none;
-color:#fff;
-font-weight:bold;
-border-radius:5px;
-}
-
-.About{
-background:#ff0000;
-}
-
-.Contact{
-background:#25d366;
-}
-
-.Privacy{
-background:#0088cc;
-
-}
-.Disclaimer{
-background:#ff0000;
-
-}
-
 }
