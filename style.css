@@ -157,7 +157,7 @@ body{
 .buttom-grid{
     display:grid;
        grid-template-columns:repeat(4,1fr);
-    <!--grid-template-columns:1fr;-->
+    /*grid-template-columns:1fr;*/
     gap:5px;
     width:50%;
     margin:20px auto 0;
