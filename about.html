@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us | Online Cyber 2.0</title>
+
+    <meta name="description"
+        content="Online Cyber 2.0 के बारे में जानें। सरकारी नौकरी, रिजल्ट, एडमिट कार्ड, स्कॉलरशिप, यूनिवर्सिटी और सरकारी योजनाओं की जानकारी।">
+
+    <style>
+        /* ================================
+           RESET
+        ================================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f2f2f2;
+            color: #333;
+            line-height: 1.7;
+        }
+
+
+        /* ================================
+           HEADER
+        ================================= */
+
+        header {
+            background: #45A4FF;
+            color: white;
+            padding: 18px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 28px;
+            margin-bottom: 3px;
+        }
+
+        header p {
+            font-size: 14px;
+            margin: 0;
+        }
+
+
+        /* ================================
+           NAVBAR
+        ================================= */
+
+        nav {
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 13px 16px;
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #45A4FF;
+        }
+
+
+        /* ================================
+           PAGE CONTAINER
+        ================================= */
+
+        .container {
+            width: 92%;
+            max-width: 1000px;
+            margin: 25px auto;
+        }
+
+
+        /* ================================
+           PAGE TITLE
+        ================================= */
+
+        .page-title {
+            background: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+            margin-bottom: 20px;
+        }
+
+        .page-title h2 {
+            color: #1677d2;
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+
+        .page-title p {
+            color: #666;
+            font-size: 14px;
+        }
+
+
+        /* ================================
+           CONTENT CARD
+        ================================= */
+
+        .card {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+        }
+
+        .card h3 {
+            color: #1677d2;
+            font-size: 21px;
+            margin-bottom: 12px;
+            border-left: 4px solid #45A4FF;
+            padding-left: 10px;
+        }
+
+        .card p {
+            font-size: 15px;
+            color: #444;
+            margin-bottom: 10px;
+        }
+
+
+        /* ================================
+           SERVICES GRID
+        ================================= */
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .service-box {
+            background: #f7fbff;
+            border: 1px solid #dceeff;
+            padding: 18px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .service-box:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .service-box h4 {
+            color: #1677d2;
+            margin-bottom: 5px;
+            font-size: 17px;
+        }
+
+        .service-box p {
+            font-size: 14px;
+            margin: 0;
+        }
+
+
+        /* ================================
+           MISSION / VISION
+        ================================= */
+
+        .mission-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .mission-box {
+            padding: 20px;
+            border-radius: 8px;
+            background: #f8f8f8;
+        }
+
+        .mission-box h4 {
+            color: #1677d2;
+            margin-bottom: 8px;
+        }
+
+        .mission-box p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+
+        /* ================================
+           NOTICE BOX
+        ================================= */
+
+        .notice {
+            background: #fff8e6;
+            border-left: 5px solid #ffb000;
+            padding: 18px;
+            border-radius: 6px;
+        }
+
+        .notice strong {
+            color: #9a6800;
+        }
+
+
+        /* ================================
+           CONTACT BOX
+        ================================= */
+
+        .contact-box {
+            text-align: center;
+            background: #eef8ff;
+            border: 1px solid #d5edff;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        .contact-box h3 {
+            border: none;
+            padding: 0;
+        }
+
+        .contact-box a {
+            color: #1677d2;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+
+        /* ================================
+           FOOTER
+        ================================= */
+
+        footer {
+            margin-top: 30px;
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        footer p {
+            font-size: 13px;
+            margin: 5px 0;
+        }
+
+        footer a {
+            color: #8bc9ff;
+            text-decoration: none;
+        }
+
+
+        /* ================================
+           MOBILE RESPONSIVE
+        ================================= */
+
+        @media (max-width: 600px) {
+
+            header {
+                padding: 15px 10px;
+            }
+
+            header h1 {
+                font-size: 23px;
+            }
+
+            nav ul {
+                justify-content: flex-start;
+                overflow-x: auto;
+                flex-wrap: nowrap;
+            }
+
+            nav ul li a {
+                white-space: nowrap;
+                padding: 11px 12px;
+                font-size: 13px;
+            }
+
+            .container {
+                width: 94%;
+                margin: 18px auto;
+            }
+
+            .page-title {
+                padding: 20px 15px;
+            }
+
+            .page-title h2 {
+                font-size: 23px;
+            }
+
+            .card {
+                padding: 18px;
+            }
+
+            .card h3 {
+                font-size: 19px;
+            }
+
+            .card p {
+                font-size: 14px;
+            }
+
+            .services {
+                grid-template-columns: 1fr;
+            }
+
+            .mission-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- ================================
+         HEADER
+    ================================= -->
+
+    <header>
+
+        <h1>
+            <span>Online</span> Cyber 2.0
+        </h1>
+
+        <p>
+            बिहार का एक मात्र विश्वसनीय वेबसाइट
+        </p>
+
+        <p>
+            ⚡ सबसे Fast अपडेट
+        </p>
+
+    </header>
+
+
+    <!-- ================================
+         NAVIGATION
+    ================================= -->
+
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="index.html">🏠 Home</a>
+            </li>
+
+            <li>
+                <a href="latest-jobs.html">💼 Latest Jobs</a>
+            </li>
+
+            <li>
+                <a href="admit-card.html">🎫 Admit Card</a>
+            </li>
+
+            <li>
+                <a href="results.html">📊 Results</a>
+            </li>
+
+            <li>
+                <a href="university.html">🎓 University</a>
+            </li>
+
+            <li>
+                <a href="sarkari-yojana.html">📋 Sarkari Yojana</a>
+            </li>
+
+            <li>
+                <a href="scholarship.html">💰 Scholarship</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- ================================
+         MAIN CONTENT
+    ================================= -->
+
+    <main class="container">
+
+
+        <!-- PAGE TITLE -->
+
+        <section class="page-title">
+
+            <h2>About Us</h2>
+
+            <p>
+                Online Cyber 2.0 के बारे में
+            </p>
+
+        </section>
+
+
+        <!-- INTRODUCTION -->
+
+        <section class="card">
+
+            <h3>📖 हमारे बारे में</h3>
+
+            <p>
+                <strong>Online Cyber 2.0</strong> एक information-based
+                educational website है, जिसका उद्देश्य विद्यार्थियों,
+                नौकरी की तैयारी करने वाले उम्मीदवारों और आम नागरिकों
+                तक महत्वपूर्ण सरकारी एवं शैक्षणिक जानकारी आसान भाषा
+                में पहुँचाना है।
+            </p>
+
+            <p>
+                हमारी वेबसाइट पर सरकारी नौकरी, परीक्षा, रिजल्ट,
+                एडमिट कार्ड, यूनिवर्सिटी अपडेट, स्कॉलरशिप और
+                सरकारी योजनाओं से संबंधित महत्वपूर्ण जानकारी
+                उपलब्ध कराने का प्रयास किया जाता है।
+            </p>
+
+        </section>
+
+
+        <!-- OUR PURPOSE -->
+
+        <section class="card">
+
+            <h3>🎯 हमारा उद्देश्य</h3>
+
+            <p>
+                हमारा मुख्य उद्देश्य विद्यार्थियों और उम्मीदवारों
+                को महत्वपूर्ण जानकारी एक ही स्थान पर सरल,
+                स्पष्ट और सुविधाजनक तरीके से उपलब्ध कराना है।
+            </p>
+
+            <p>
+                हम कोशिश करते हैं कि उपयोगकर्ताओं को महत्वपूर्ण
+                अपडेट समय पर मिल सके और उन्हें संबंधित
+                official notification तक आसानी से पहुँचने में
+                सहायता मिले।
+            </p>
+
+        </section>
+
+
+        <!-- SERVICES -->
+
+        <section class="card">
+
+            <h3>🚀 हम क्या जानकारी प्रदान करते हैं?</h3>
+
+            <div class="services">
+
+                <div class="service-box">
+
+                    <h4>💼 Latest Jobs</h4>
+
+                    <p>
+                        सरकारी एवं अन्य महत्वपूर्ण नौकरी
+                        notifications और recruitment updates।
+                    </p>
+
+                </div>
+
+
+                <div class="service-box">
+
+                    <h4>🎫 Admit Card</h4>
+
+                    <p>
+                        विभिन्न प्रतियोगी परीक्षाओं के
+                        admit card और परीक्षा संबंधी updates।
+                    </p>
+
+                </div>
+
+
+                <div class="service-box">
+
+                    <h4>📊 Results</h4>
+
+                    <p>
+                        परीक्षा परिणाम, merit list,
+                        cut-off और result updates।
+                    </p>
+
+                </div>
+
+
+                <div class="service-box">
+
+                    <h4>🎓 University</h4>
+
+                    <p>
+                        University admission, examination,
+                        result और अन्य educational updates।
+                    </p>
+
+                </div>
+
+
+                <div class="service-box">
+
+                    <h4>📋 Sarkari Yojana</h4>
+
+                    <p>
+                        केंद्र एवं राज्य सरकार की
+                        महत्वपूर्ण योजनाओं की जानकारी।
+                    </p>
+
+                </div>
+
+
+                <div class="service-box">
+
+                    <h4>💰 Scholarship</h4>
+
+                    <p>
+                        विद्यार्थियों के लिए scholarship,
+                        application और संबंधित updates।
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MISSION & VISION -->
+
+        <section class="card">
+
+            <h3>🌟 हमारा Mission & Vision</h3>
+
+            <div class="mission-grid">
+
+                <div class="mission-box">
+
+                    <h4>🎯 Mission</h4>
+
+                    <p>
+                        सही और उपयोगी जानकारी को सरल भाषा में
+                        अधिक से अधिक विद्यार्थियों और उम्मीदवारों
+                        तक पहुँचाना।
+                    </p>
+
+                </div>
+
+
+                <div class="mission-box">
+
+                    <h4>👁️ Vision</h4>
+
+                    <p>
+                        एक ऐसा trusted information platform बनाना
+                        जहाँ users को education और career से जुड़ी
+                        महत्वपूर्ण जानकारी आसानी से मिल सके।
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- INFORMATION VERIFICATION -->
+
+        <section class="card">
+
+            <h3>✅ Information Verification</h3>
+
+            <p>
+                हम महत्वपूर्ण जानकारी को उपलब्ध official sources,
+                government departments, universities, examination
+                authorities और संबंधित organizations की notifications
+                के आधार पर प्रस्तुत करने का प्रयास करते हैं।
+            </p>
+
+            <p>
+                किसी भी आवेदन, नौकरी, परीक्षा, रिजल्ट या योजना से
+                संबंधित अंतिम निर्णय लेने से पहले संबंधित
+                <strong>official website और official notification</strong>
+                को जरूर देखें।
+            </p>
+
+        </section>
+
+
+        <!-- DISCLAIMER -->
+
+        <section class="card">
+
+            <h3>⚠️ Disclaimer</h3>
+
+            <div class="notice">
+
+                <p>
+                    <strong>महत्वपूर्ण सूचना:</strong>
+                </p>
+
+                <p>
+                    Online Cyber 2.0 किसी भी सरकारी विभाग,
+                    सरकारी संस्था, विश्वविद्यालय या examination
+                    authority की official website नहीं है।
+                </p>
+
+                <p>
+                    हमारी वेबसाइट का उद्देश्य केवल educational
+                    और informational purpose के लिए जानकारी
+                    उपलब्ध कराना है।
+                </p>
+
+                <p>
+                    किसी भी आवेदन या महत्वपूर्ण निर्णय से पहले
+                    संबंधित विभाग की official website और
+                    notification को अवश्य verify करें।
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+
+        <section class="card">
+
+            <div class="contact-box">
+
+                <h3>📩 हमसे संपर्क करें</h3>
+
+                <p>
+                    यदि आपको हमारी वेबसाइट से संबंधित कोई
+                    सुझाव, समस्या या feedback देना है, तो
+                    आप हमसे Contact Us page के माध्यम से
+                    संपर्क कर सकते हैं।
+                </p>
+
+                <p>
+                    👉
+                    <a href="contact.html">
+                        Contact Us
+                    </a>
+                </p>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- ================================
+         FOOTER
+    ================================= -->
+
+    <footer>
+
+        <p>
+            © <span id="year"></span>
+            Online Cyber 2.0. All Rights Reserved.
+        </p>
+
+        <p>
+            <a href="about.html">About Us</a>
+            |
+            <a href="contact.html">Contact Us</a>
+            |
+            <a href="privacy-policy.html">Privacy Policy</a>
+            |
+            <a href="disclaimer.html">Disclaimer</a>
+        </p>
+
+    </footer>
+
+
+    <!-- ================================
+         YEAR SCRIPT
+    ================================= -->
+
+    <script>
+
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+
+    </script>
+
+
+</body>
+</html>
