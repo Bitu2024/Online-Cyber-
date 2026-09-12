@@ -129,6 +129,46 @@ body{
     background:#eef7ff;
     color:#1976d2;
 }
+
+/* Bottom Grid */
+.buttom-grid{
+    width:90%;
+    max-width:1000px;
+    margin:20px auto;
+    padding:10px;
+    
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px;
+}
+
+.buttom-grid .box{
+    display:block;
+    background:#d50000;
+    color:#fff;
+    text-align:center;
+    text-decoration:none;
+    padding:15px 10px;
+    font-size:16px;
+    font-weight:bold;
+    border-radius:5px;
+}
+
+.buttom-grid .box:hover{
+    background:#0d6efd;
+}
+
+
+/* Mobile */
+@media (max-width:768px){
+
+    .buttom-grid{
+        grid-template-columns:repeat(2,1fr);
+        padding:10px;
+    }
+
+}
+
 </style>
 
 </head>
@@ -175,6 +215,15 @@ Scholarship
 
 </ul>
 </div>
+
+<section class="buttom-grid">
+
+    <a href="about.html" class="box">About Us</a>
+    <a href="contact.html" class="box">Contact Us</a>
+    <a href="privacy-policy.html" class="box">Privacy Policy</a>
+    <a href="disclaimer.html" class="box">Disclaimer</a>
+
+</section>
 
 <script>
 let searchInput = document.getElementById("searchInput");
