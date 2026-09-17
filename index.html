@@ -33,12 +33,23 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     </ul>  
 </nav>  
 
-<!-- Search --> 
+<!-- Search -->
 
-<section class="search-box">  
-<input type="text" placeholder="Search jobs, result etc...">  
-<button><i class="fa fa-search"></i></button>  
-</section> 
+<section class="search-box">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search jobs, result etc..."
+    >
+
+    <button type="button" onclick="searchWebsite()">
+        <i class="fa fa-search"></i>
+    </button>
+
+</section>
+
+<div id="searchResults"></div>
 
 <!-- Social Buttons --> 
  
